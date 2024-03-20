@@ -5,30 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Box clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/fae49cd3f6.js" crossorigin="anonymous"></script>
 </head>
+<div class="theHeading">
+    <div class="theName">Omnicient 1.0</div>
+    <div class="logo">
+        <img src="images/logo3.jpeg" alt="The page logo">
+    </div>
+</div>
 <div class="chatContainer">
     <div class="outgoingChat">
         <div class="chatContent">
             <div class="chatDetails">
                 <img src="images/user.jpg" alt="User profile">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="incomingChat">
+        <div class="chatContent">
+            <div class="chatDetails">
+                <img src="images/logo3.jpeg" alt="User profile">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <span class="fa-regular fa-copy"></span>
+        </div>
+    </div>
+    <div class="incomingChat">
+        <div class="chatContent">
+            <div class="chatDetails">
+                <img src="images/logo3.jpeg" alt="User profile">
+                <div class="typingAnimation">
+                    <div class="typingDot" style="--delay:0.2s"></div>
+                    <div class="typingDot" style="--delay:0.3s"></div>
+                    <div class="typingDot" style="--delay:0.4s"></div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="incomingChat">
-    <div class="chatContent">
-        <div class="chatDetails">
-            <img src="images/logo3.jpeg" alt="User profile">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book</p>
+</div>
+<div class="typingContainer">
+    <div class="typingContent">
+        <div class="typingTextArea">
+            <textarea id="chatInput" placeholder="Enter a prompt here"></textarea>
+            <span id="sendBtn" class="fa-regular fa-message"></span>
         </div>
-        <span class="material">content_copy</span>
+        <!-- <div class="typingControls">
+            <span id="themeBtn" class="fa-solid fa-gears"></span>
+            <span id="deleteBtn" class="fa-solid fa-eraser"></span>
+        </div> -->
     </div>
 </div>
 
